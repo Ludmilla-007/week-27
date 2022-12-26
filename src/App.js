@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import './Tarif';
+import Tarif from './Tarif';
 
-function App() {
+const tarifs =[
+  {name:"Безлимитный 300", price:"300 руб/мес", speed:"до 10 Мбит/сек", more:"Объем включенного графика не ограничен"},
+  {name:"Безлимитный 450", price:"450 руб/мес",  speed:"до 50 Мбит/сек", more:"Объем включенного графика не ограничен"},
+  {name:"Безлимитный 550", price:"550 руб/мес",  speed:"до 100 Мбит/сек", more:"Объем включенного графика не ограничен", isSelected:true},
+  {name:"Безлимитный 1000", price:"1000 руб/мес",  speed:"до 200 Мбит/сек", more:"Объем включенного графика не ограничен"}
+]
+
+class  App extends React.Component {
+  render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        tarifs.map((tarif)=>
+        <Tarif name={tarif.name} price={tarif.price} speed={tarif.speed} more={tarif.more} isSelected={tarif.isSelected}></Tarif>
+        )
+      }
+      
     </div>
   );
 }
-
+}
 export default App;
