@@ -2,8 +2,9 @@
   text-align: center;
   display: flex;
   flex-direction: row;
-  background-color:blanchedalmond;
+  background-color:rgb(46, 189, 132);
   align-content: space-around;
+ 
 }
 
 .App-logo {

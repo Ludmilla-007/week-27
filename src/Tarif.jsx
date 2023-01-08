@@ -10,6 +10,7 @@ render(){
                 <div className='tarif-price'>{price}</div>
                 <div className='tarif-speed'>{speed}</div>
                 <div className='tarif-more'>{more}</div>
+                <div className='tarif-button'><button>Выбрать</button></div>
             </div>
 
         )
