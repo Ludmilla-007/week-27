@@ -4,6 +4,8 @@
   flex-direction: row;
   background-color:blanchedalmond;
   align-content: space-around;
+  justify-content: space-around;
+  
 }
 
 .App-logo {
@@ -39,4 +41,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+.selected{
+  border: 2px solid orange;
 }
