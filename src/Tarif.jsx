@@ -1,11 +1,16 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Tarif.scss';
 
-class Tarif extends React.Component{
-render(){
-    const {name,price, speed,more,isSelected}=this.props;
+function Tarif({name,price, speed,more,isSelected}){
+
+    const [selected, setSelected] = useState([]);
+
+    const handleSelect = () => {
+      setSelected(!selected)
+    }
+    const select = selected ? "selected" : "";
         return(
-            <div className={'tarif-card' +(isSelected? "selected":"")}>
+            <div onClick={handleSelect} className={select}>
                 <div className='tarif-name'>{name}</div>
                 <div className='tarif-price'>{price}</div>
                 <div className='tarif-speed'>{speed}</div>
@@ -14,5 +19,5 @@ render(){
 
         )
     }
-}
+
 export default Tarif;

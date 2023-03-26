@@ -2,7 +2,7 @@
   text-align: center;
   display: flex;
   flex-direction: row;
-  background-color:rgb(46, 189, 132);
+  background-color: rgb(46, 189, 132);
   align-content: space-around;
 }
 
@@ -36,10 +36,12 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-.selected{
+
+.selected {
   border: 2px solid orange;
 }
