@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import './Tarif.scss';
 
-function Tarif({name,price, speed,more,isSelected}){
+function Tarif({name,price, speed,more,button,isSelected}){
 
     const [selected, setSelected] = useState([]);
 
@@ -15,9 +15,10 @@ function Tarif({name,price, speed,more,isSelected}){
                 <div className='tarif-price'>{price}</div>
                 <div className='tarif-speed'>{speed}</div>
                 <div className='tarif-more'>{more}</div>
-            </div>
+                </div>
 
         )
     }
 
 export default Tarif;
+

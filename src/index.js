@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import './App';
 import './Tarif';
 import './Tarif';
+import './Button';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( <
   React.StrictMode >
